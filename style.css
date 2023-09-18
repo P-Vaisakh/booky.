@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #2b2d42;
+}
+
+body{
+    background: #bfae9e;
+    overflow: hidden;
+}
+
+header {
+    background: transparent;
+    padding: 15px 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #352F44;
+    padding: 15px 0;
+}
+
+.logoContainer a .logo-booky {
+    font-weight: 700;
+    color: #352F44;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav ul a {
+    font-weight: 700;
+    transition: transform .3s;
+}
+
+nav ul a li i {
+    margin: 0 10px;
+    color: #352F44;
+}
+
+nav ul a:hover{
+    transform: scale(1.1);
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.loading{
+    width: 0;
+    height: 2px;
+    background: #2b2d42;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    border-radius: 30px;
+    z-index: 10000;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero .hero-text{
+    border-radius: 10px;
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    width: 900px;
+    transform: translate(-50%);
+    text-align: center;
+    
+    background-image: linear-gradient(45deg, #ffffff4f, #ddd6e550);
+}
+
+.hero .hero-text h1{
+    font-family: 'Aboreto', cursive;
+    line-height: 130px;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.modal-dialog .modal-content .modal-body input{
+   width: 75%;
+   height: 30px;
+   margin-bottom: 20px;
+   padding: 10px;
+   font-size: 18px;
+   border-radius: 10px;
+}
+
+.header-toggle{
+    background: none;
+    border: none;
+    display: none;
+}
+
+.upper-button,
+.lower-button{
+    margin-top: 3px;
+    width: 25px;
+    height: 3px;
+    background: #352F44;
+}
+
+@media (max-width:768px){
+    nav ul a{
+        display: none;
+    }
+    .header-toggle{
+        display: block;
+    }
+    header{
+        padding: 10px 30px;
+    }
+    header nav .logoContainer .logo-booky{
+        font-size: 20px;
+    }
+    .hero .hero-text{
+        left: 50%;
+        width: 100%;
+    }
+    .hero .hero-text h1{
+        font-size: 20px;
+        line-height: 40px;
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+    }
+    .hero img{
+        width: 100%;
+    }
+}
+
+.navbar-mobile-view{
+    position: absolute;
+    z-index:100;
+    background: #bfae9e;
+    top: 75px;
+    padding: 20px 10px 0 0;
+    width: 100%;
+    display: none;
+}
+.toggle-class{
+    display: block;
+}
+
+.navbar-mobile-view ul{
+    list-style: none;
+    font-size: 14px;
+}
+
+.navbar-mobile-view ul li{
+    margin-bottom: 10px;
+    font-weight: 500;
+    border-bottom: 1px solid;
+}
+
+
+
